@@ -1,13 +1,12 @@
 fn main() {
+    let arr:[i32;4] = [10,20,30,40];
+    println!("array is {:?}",arr);
+    println!("array size is :{}", arr.len());
 
-let b:(i32,bool,f64) = (110,true,10.9);
-print(b);
+
+    for val in arr.iter(){
+        
+        println!("value is :{}",val);
 
     }
-// pass the tuple as a parameter
-
-fn print(x:(i32,bool,f64)) {
-
-    println!("Inside print method");
-    println!("{:?}",x)
-    }   
+}

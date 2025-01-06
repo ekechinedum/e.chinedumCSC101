@@ -1,17 +1,25 @@
-fn main() {
+use std::io;
 
-let v - vec!['C','O','M','P','U','T','E','R'];
+fn cheacker{
+    let mut input =  String::new();
+    println!("Enter a character:");
+    io::stdin().read_line(&mut input).expect("Failed to read input");
+    let ch:char = input.trim(),parse().expect("Invalid input";)
 
-let input1 = String::new();
-
-println!("Enter an index value btw (0-7)");
-std::io::stdin().read_line(&mut_input1).expect("Failure to read input");
-// index is the non negattive value which is smaller than the size of the vector
-let index.usize = inout.trim().parse().expect("Invalid input");
-
-//getting value at given index value
-let ch: char = v[index];
-
-print!("{} is the character for index [{}]\n",ch.index);
-
+    if ch>= '0' && ch <= '9'
+{
+    println!("Character '()' is a digit",ch);
 }
+else
+{
+    println!("Charcter '()' is not a digit",ch);
+    }
+        }
+
+        fn main(){
+            //calling function
+            println!("Welcome! This program checks whether a character variable
+            contains a digit or not");
+            checker()
+
+        }

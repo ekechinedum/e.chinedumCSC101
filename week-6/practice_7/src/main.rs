@@ -1,24 +1,15 @@
 fn main() {
-    //Array with data typr(explicit integer datatype)
+    let k1 = "Yemisis".to_String();
+    let k2 = "Shyllom".to_String();
+    let k3 = "Museum".to_String();
+    let k4 = "of".to_String();
+    let k5 = "Art".to_String();
+    let k6 = "PAU".to_String();
 
-    let arr1:[i32;4] = [10,20,30,40];
-    println!("\nArray with data type");
-    println!("array is {:?}"arr1);
-    println!("array size os :{}",arr1,len());
 
-    //Array without datatype (implicti float datatype)
-
-    let arr2 = [10.4,20.7,30.4,40.9,51.2,72.2];
-    println!("\nArray without data typr");
-    println!("array is {:?}",arr2);
-    println!("array size is :{}",arr2.len());
-
-    // Array with default values that creates and
-    // intializes all its elements with a default value of -1.
-
-    let arr3:[i32;8] = [-1;8];
-    println!("/nArray with default values");
-    println!("array is {:?}",arr3);
-    println!("array size is {}",arr3.len());
+// format macro
+let k7 = format!("{} {} {} {} {} {} ", k1,k2,k3,k4,k5,k6);
+// print output
+println!("\n {}",k7);
 
 }

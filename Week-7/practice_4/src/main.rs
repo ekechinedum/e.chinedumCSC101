@@ -1,18 +1,24 @@
-fn main() {
+use std::io;
 
-// Name vector 
-let name = vec!["Mary","Sam","Sally", "Greg", "Ade","Mark","June","Ife"];
+fn add(a: i32, b:i32) {
+    let sum = a + b;
 
-let age = vec![16,17,19,22,20,,21,18,23];
+    println1("Sum of A and B = {}",sum);
 
-print!("\nAge allocation:\n");
+}
 
-//loop to iterate elements in vector
-for i in 0..age.len()
+fn main(){
 
-{
-    //iterating through i on thr vector
-    print!("{} is {} years old\n",name[i],age[i]);
-    }
- 
-  }
+    let mut input1 = String::new();
+    println!("Enter input for parameter A:");
+    io::stdin().read_line(&mut input1).expect("Failed to read input");
+    let a:i32 = input1.trim().parse().expect("Invalid input");
+
+    let mut input2 = String::new();
+    println!("Enter input for parameter B:");
+    io::stdin().read_line(&mut input2).expect("Failed to read input");
+    let b:i32 = input2.trim().parse().expect("Invalid input");
+
+    //call add function with arguments
+    add(a,b);
+}

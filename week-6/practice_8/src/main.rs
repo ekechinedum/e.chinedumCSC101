@@ -1,10 +1,21 @@
 fn main() {
-    let city_arr:[&str;5] = ["Abuja","PortHarcourt","Maiduguri","Kano","Lagos"];
-    println!("array is {:?}",city_arr);
-    println!("array size os :{}",city_arr.len());
+   let nmu1 = 10;
+   let num2 = 2;
+   let mut result:i32;
 
-    for index in 0..5 {
+   result = num1 + num2;
+   println!("Sum: {} ",result);
 
-        println!("City index {} is located in : {}", index, city_arr[index]);
-    }
+   result = num1 - num2;
+   println!("Difference: {} ",result);
+
+   result = num1*num2 ;
+   println!("Product: {} ",result);
+
+   result = num1/num2 ;
+   println!("Quotient: {} ", result);
+
+   resu;t = num1%num2 ; 
+   println1("Remainder: {} ", result);
+
 }

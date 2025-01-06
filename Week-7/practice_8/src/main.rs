@@ -1,13 +1,10 @@
 fn main() {
-    // initialize a mutable tuple
-    let mut mountain_heights = ("Everest", 8848,"Fishtail", 6993);
+    let city_arr:[&str;5] = ["Abuja","PortHarcourt","Maiduguri","Kano","Lagos"];
+    println!("array is {:?}",city_arr);
+    println!("array size os :{}",city_arr.len());
 
-    println!("Original tuple = {:?}",mountain_heights);
+    for index in 0..5 {
 
-    // change 3rd and 4th element of a mutable tuple
-    mountain_heights.2 = "Lhotse";
-    mountain_heights.3 = 8516;
-
-    println!("Changed tuple = {:?}",mountain_heights);
-
+        println!("City index {} is located in : {}", index, city_arr[index]);
+    }
 }

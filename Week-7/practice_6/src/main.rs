@@ -1,13 +1,11 @@
 fn main() {
+   let mut num:i32 = 5;
+   mutate_num_to_zero(&mut num);
+   println!("The valur if num is :{}",num);
+}
 
-// Create two vector
-let v = vec![1,2,3,4,5,6,7,8];
-let x = vec![5,6,7,8,9,10,11];
 
-// Use a  for loop to add elements of  the vector
-for index in 0..6 (
-
-    let sum = v[index] + x[index];]
-    println!("{:?}",sum);
-        )
-    }
+fn  mutate_num_to_zero(param_num:&mut i32){
+    *param_num = *param_num*0;  //de reference
+    println!("pram_num value is :{}",param_num);
+}
